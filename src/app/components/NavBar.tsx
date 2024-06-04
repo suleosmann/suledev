@@ -36,11 +36,11 @@ const NavBar: React.FC = () => {
           {isOpen ? <FaTimes size={28} /> : <FaBars size={28} />}
         </button>
         <ul className={`absolute right-0 mt-2 w-48 shadow-lg rounded-lg md:static md:flex md:space-x-8 font-semibold ${isOpen ? 'bg-custom-blue' : ''} ${isOpen ? 'block' : 'hidden'} md:block`}>
-          <li className='py-2 px-4 md:py-0'>
+          {/* <li className='py-2 px-4 md:py-0'>
             <Link href='/blog'>
               blog
             </Link>
-          </li>
+          </li> */}
           <li className='py-2 px-4 md:py-0'>
             <Link href='/projects'>
               projects
