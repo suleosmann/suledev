@@ -1,7 +1,9 @@
+"use client"
 import React from 'react'
 import Image from 'next/image'
 import HeroImage from '../../assets/sulelogoimage.jpeg'
 import { Button } from "../../components/ui/button"
+import Link from 'next/link'
 
 const HeroSection = () => {
   return (
@@ -16,10 +18,14 @@ const HeroSection = () => {
         </h4>
       </div>
       <div className="flex flex-col sm:flex-row sm:space-x-2">
-        <Button variant="default" className="mb-2 sm:mb-0 sm:mr-2">
-          My Projects
-        </Button>
+        <Link href="/projects">
+          <Button variant="default" className="mb-2 sm:mb-0 sm:mr-2">
+            My Projects
+          </Button>
+        </Link>
+        <Link href="#footer">
         <Button variant="secondary">Get in Touch</Button>
+        </Link>
       </div>
     </div>
   )
