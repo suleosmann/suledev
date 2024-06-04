@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="flex flex-col justify-center items-center h-[90vh] px-4 sm:px-8 lg:px-16">
       <div className="text-center mb-8">
         <h1 className="text-4xl md:text-6xl lg:text-8xl font-bold">
-          Hi, I'm Suleiman!
+          {`Hi, I'm Suleiman!`}
         </h1>
         <h4 className="mt-3 text-lg md:text-2xl lg:text-4xl font-normal tracking-widest">
           I <span className="text-[#3e32e4]">build</span> custom WEB solutions and{' '}

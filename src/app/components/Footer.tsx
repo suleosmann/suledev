@@ -8,7 +8,7 @@ const Footer = () => {
         Have a project in mind?
       </h2>
       <p className="text-lg md:text-xl font-normal mb-8 text-gray-400">
-        I'm available to work!
+        {`I'm available to work!`}
       </p>
       <button className="bg-green-500 text-white py-2 px-6 rounded-md text-lg mb-8 hover:bg-green-600 transition duration-300">
         Contact Me

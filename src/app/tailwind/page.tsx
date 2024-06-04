@@ -6,7 +6,7 @@ const page = () => {
     <div className="min-h-screen">
       <h1 className="text-3xl font-bold mb-4">Tailwind Components Showcase</h1>
       <p className="mb-4">
-        Welcome to my Tailwind Components showcase! This page is dedicated to displaying various UI components built using Tailwind CSS. It's a way to demonstrate my proficiency with Tailwind CSS and serve as a reference for future projects.
+        Welcome to my Tailwind Components showcase! This page is dedicated to displaying various UI components built using Tailwind CSS. {`It's`} a way to demonstrate my proficiency with Tailwind CSS and serve as a reference for future projects.
       </p>
       <p className="mb-4">
         Use the sidebar to navigate through different components. Each component has a live preview and the corresponding code snippet.
