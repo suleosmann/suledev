@@ -17,22 +17,31 @@ const posts = {
 const Post = () => {
   const router = useRouter();
   const { slug } = router.query;
+
+  if (typeof slug !== 'string') {
+    return (
+      <div>
+        <h1>Post Not Found</h1>
+      </div>
+    );
+  }
+
   const post = posts[slug];
 
   if (!post) {
     return (
       <div>
         <h1>Post Not Found</h1>
-        </div>
+      </div>
     );
   }
 
   return (
-      <div>
+    <div>
       <h1 className="text-2xl font-bold mb-4">{post.title}</h1>
       <p className="text-gray-600 mb-4">{post.date}</p>
       <div>{post.content}</div>
-      </div>
+    </div>
   );
 };
 
